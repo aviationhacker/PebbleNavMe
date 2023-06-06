@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.batescorp.pebble.nav" platformBuildVersionCode="26" platformBuildVersionName="8.0.0" android:versionCode="156" android:versionName="1.56">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:backupAgent="com.batescorp.pebble.nav.lib.NavMeBackupAgent" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:restoreAnyVersion="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAI1156dwAGh5-U77B7N-HDTTYmTg-234-7wtMCYQ"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/app_name" android:name="com.batescorp.pebble.nav.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.batescorp.pebble.nav.settings.SettingsActivity"/>
+        <activity android:label="@string/app_name" android:name="com.batescorp.pebble.nav.activity.UnlockActivity">
+&gt;
+</activity>
+        <activity android:label="@string/app_name" android:name="com.batescorp.pebble.nav.activity.DestinationActivity"/>
+        <service android:name="com.batescorp.pebble.nav.listener.NavMeListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.batescorp.pebble.nav.service.CheckLicenseService"/>
+        <service android:enabled="true" android:name="com.batescorp.pebble.nav.service.NavProcessingService"/>
+        <service android:exported="false" android:name="com.batescorp.pebble.nav.service.DevEmailIntentService"/>
+    </application>
+</manifest>

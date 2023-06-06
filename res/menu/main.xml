@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_settings" android:orderInCategory="100" android:title="@string/action_settings" android:showAsAction="never" />
+    <item android:id="@id/destination_settings" android:orderInCategory="100" android:title="@string/action_destination" android:showAsAction="never" />
+    <item android:id="@id/email_logcat" android:orderInCategory="100" android:title="@string/action_email_logcat" android:showAsAction="never" />
+    <item android:id="@id/installWatchApp" android:orderInCategory="100" android:title="@string/action_install_watchapp" android:showAsAction="never" />
+    <item android:id="@id/downloadWatchApp" android:orderInCategory="100" android:title="@string/action_download_watchapp" android:showAsAction="never" />
+    <item android:id="@id/restore_purchase" android:visible="false" android:orderInCategory="100" android:title="@string/action_restore_purchase" android:showAsAction="never" />
+    <item android:id="@id/jump_notification" android:orderInCategory="100" android:title="@string/action_goto_notification" android:showAsAction="never" />
+    <item android:id="@id/jump_writeaccess" android:orderInCategory="100" android:title="@string/action_goto_write" android:showAsAction="never" />
+</menu>

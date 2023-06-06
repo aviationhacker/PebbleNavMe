@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: NavMe for Pebble_v1.57.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '26'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  jetty-dir.css: '8'
+  org/eclipse/jetty/http/encoding.properties: '8'
+  org/eclipse/jetty/http/mime.properties: '8'
+  org/eclipse/jetty/http/useragents: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.1
+versionInfo:
+  versionCode: '156'
+  versionName: '1.56'
