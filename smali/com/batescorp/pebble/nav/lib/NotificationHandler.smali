@@ -1129,8 +1129,8 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 353
-    invoke-virtual {p0}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->getNavTitleId()Ljava/lang/String;
+    .line 352
+    invoke-virtual {p0}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->getNavDescriptionId()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1146,37 +1146,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_1
 
-    .line 354
-    invoke-virtual {p0, v1}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->setNavTitle(Ljava/lang/String;)V
-
-    .line 356
+    .line 353
     :cond_0
-    :cond_b
-    invoke-virtual {p0}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->getNavDescriptionId()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const-string v0, "text"
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 357
-    :cond_1
     invoke-virtual {p0, v1}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->setNavDescription(Ljava/lang/String;)V
 
-    .line 359
+    .line 355
     invoke-virtual {p2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -1185,7 +1161,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 361
+    .line 357
     invoke-virtual {p2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -1196,9 +1172,24 @@
 
     move-result-object v0
 
-    .line 363
+    .line 359
     :goto_1
     invoke-virtual {p0, v0}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->setNavHtmlDescription(Ljava/lang/String;)V
+
+    .line 362
+    :cond_1
+    invoke-virtual {p0}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->getNavTitleId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 363
+    invoke-virtual {p0, v1}, Lcom/batescorp/pebble/nav/lib/NotificationHandler;->setNavTitle(Ljava/lang/String;)V
 
     .line 366
     :cond_2
