@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.batescorp.pebble.nav" platformBuildVersionCode="26" platformBuildVersionName="8.0.0" android:versionCode="157" android:versionName="1.57">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.batescorp.pebble.nav" platformBuildVersionCode="26" platformBuildVersionName="8.0.0" android:versionCode="158" android:versionName="1.58">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
