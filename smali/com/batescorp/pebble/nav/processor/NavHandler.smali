@@ -1660,7 +1660,7 @@
     :goto_1
     iget-object v1, v0, Lcom/batescorp/pebble/nav/processor/NavHandler$a;->d:Ljava/lang/String;
 
-    const-string v2, "ETA"
+    const-string v2, "Arrive"
 
     const-string v3, ""
 
